@@ -1,26 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --primary: #FF6B35;
+  --secondary: #2EC4B6;
+  --accent: #FFBE0B;
+  --pop: #E63946;
+  --bg: #FFF8F0;
+  --surface: #FFFFFF;
+  --text: #1A1A2E;
+  --text-muted: #6B6B8A;
+  --border: #E8E0D8;
+  --header-bg: rgba(255, 248, 240, 0.92);
+  --shadow-sm: 0 1px 4px rgba(26,26,46,0.06);
+  --shadow: 0 4px 16px rgba(26,26,46,0.08);
+  --shadow-lg: 0 12px 32px rgba(26,26,46,0.12);
+  --radius: 12px;
+  --radius-sm: 8px;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  :root:not([data-theme="light"]) {
+    --bg: #0F0F1A;
+    --surface: #1C1C32;
+    --text: #F0EBE3;
+    --text-muted: #9898B2;
+    --border: #2E2E4A;
+    --header-bg: rgba(15, 15, 26, 0.92);
+    --shadow-sm: 0 1px 4px rgba(0,0,0,0.2);
+    --shadow: 0 4px 16px rgba(0,0,0,0.25);
+    --shadow-lg: 0 12px 32px rgba(0,0,0,0.35);
   }
 }
 
+:root[data-theme="dark"] {
+  --bg: #0F0F1A;
+  --surface: #1C1C32;
+  --text: #F0EBE3;
+  --text-muted: #9898B2;
+  --border: #2E2E4A;
+  --header-bg: rgba(15, 15, 26, 0.92);
+  --shadow-sm: 0 1px 4px rgba(0,0,0,0.2);
+  --shadow: 0 4px 16px rgba(0,0,0,0.25);
+  --shadow-lg: 0 12px 32px rgba(0,0,0,0.35);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Nunito', system-ui, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Fredoka', 'Nunito', system-ui, sans-serif;
+  line-height: 1.2;
+  margin: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
