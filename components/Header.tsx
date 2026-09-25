@@ -20,7 +20,7 @@ export default function Header({
 
   return (
     <header
-      className="sticky top-0 z-[100] border-b"
+      className="border-b"
       style={{
         background: 'var(--header-bg)',
         backdropFilter: 'blur(14px)',

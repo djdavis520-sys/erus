@@ -58,40 +58,42 @@ export default function Storefront({ initialProducts }: { initialProducts: Produ
 
   return (
     <>
-      {/* Announcement bar -- sticky, sits above the nav header */}
-      <div
-        className="sticky top-0 z-[101] border-b"
-        style={{ background: 'var(--primary)', borderColor: 'transparent' }}
-      >
+      {/* Sticky wrapper keeps announcement bar + header locked together so they don't overlap on scroll */}
+      <div className="sticky top-0 z-[100]">
         <div
-          className="flex items-center justify-between gap-3 px-4 py-1.5"
-          style={{ maxWidth: 1200, margin: '0 auto' }}
+          className="border-b"
+          style={{ background: 'var(--primary)', borderColor: 'transparent' }}
         >
-          <a
-            href="tel:+18727316376"
-            className="flex items-center gap-2 font-bold text-white hover:underline text-sm"
+          <div
+            className="flex items-center justify-between gap-3 px-4 py-1.5"
+            style={{ maxWidth: 1200, margin: '0 auto' }}
           >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5 19.79 19.79 0 01.06 2.84a2 2 0 012-2.18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.09a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/>
-            </svg>
-            (872) 731-6376
-          </a>
-          <div className="hidden md:flex items-center gap-2 text-white text-xs font-semibold opacity-90">
-            <span>We accept:</span>
-            {['Cash', 'Debit', 'Credit'].map((m) => (
-              <span key={m} className="px-2 py-0.5 rounded-full border border-white/40 bg-white/10">{m}</span>
-            ))}
+            <a
+              href="tel:+18727316376"
+              className="flex items-center gap-2 font-bold text-white hover:underline text-sm"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5 19.79 19.79 0 01.06 2.84a2 2 0 012-2.18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.09a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/>
+              </svg>
+              (872) 731-6376
+            </a>
+            <div className="hidden md:flex items-center gap-2 text-white text-xs font-semibold opacity-90">
+              <span>We accept:</span>
+              {['Cash', 'Debit', 'Credit'].map((m) => (
+                <span key={m} className="px-2 py-0.5 rounded-full border border-white/40 bg-white/10">{m}</span>
+              ))}
+            </div>
+            <span className="md:hidden text-white/80 text-xs">Call or text to order</span>
           </div>
-          <span className="md:hidden text-white/80 text-xs">Call or text to order</span>
         </div>
-      </div>
 
-      <Header
-        filter={filter}
-        onFilterChange={setFilter}
-        onCartOpen={() => setCartOpen(true)}
-        products={products}
-      />
+        <Header
+          filter={filter}
+          onFilterChange={setFilter}
+          onCartOpen={() => setCartOpen(true)}
+          products={products}
+        />
+      </div>
 
       {/* Mobile filters */}
       <div className="md:hidden flex gap-1 px-4 pt-3" style={{ maxWidth: 1200, margin: '0 auto' }}>
