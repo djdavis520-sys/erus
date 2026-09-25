@@ -3,15 +3,15 @@ import { createProduct, getProducts } from './db';
 const SEED_PRODUCTS = [
   {
     name: 'Lemon Cherry Gelato',
-    tagline: 'Hybrid · Sweet citrus, smooth finish',
-    description: 'A crowd-favorite cross of Sunset Sherbet x Girl Scout Cookies. Bursts with a bright lemon-cherry sweetness layered over a creamy gelato finish. Delivers a balanced euphoric and relaxing experience — uplifting enough for daytime, smooth enough for evenings.',
+    tagline: 'Indica-dominant Hybrid · 19–30% THC, dessert finish',
+    description: 'Popularized by Backpackboyz from Sunset Sherbet × Girl Scout Cookies. Tart citrus and sour lemon peel on the nose, with tangy lemon, rich cherry, and a creamy dessert-like finish on the palate. Delivers an initial mood boost and happy head change that transitions into a tingly, deeply relaxed body high. Great for chronic pain, stress, and anxiety.',
     variants: [
       { weight: '3.5g', price: 25 },
       { weight: '1/2 oz', price: 40 },
       { weight: '1 oz', price: 90 },
     ],
     isSpecial: true,
-    benefits: ['Lemon & Cherry Aroma', 'Euphoric', 'Smooth Finish'],
+    benefits: ['Lemon & Cherry', 'Mood Boost', 'Deep Body Relax'],
     images: ['/uploads/lemon-cherry-gelato.webp'],
     active: true,
     sortOrder: 0,
