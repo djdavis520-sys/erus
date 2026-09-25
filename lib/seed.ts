@@ -48,15 +48,15 @@ const SEED_PRODUCTS = [
   },
   {
     name: 'Titan Express',
-    tagline: 'Indica-dominant · Heavy hitter, deep relax',
-    description: 'A titan in every sense — massive dense nugs, thick resin production, and effects that hit with serious weight. Earthy, kushy notes with hints of dark fruit lead into a deeply sedating full-body experience. Built for winding down and letting go.',
+    tagline: 'Sativa-dominant · 28–34% THC, electric citrus',
+    description: 'Created by Grassroots from Citradelic Sunset × Modified Muffins. Sharp electric citrus, lemon candy, and pine on the nose with a spicy-sour cedar finish. Hits fast and hard with a clear-headed, tingly euphoric surge of sativa energy. Great for daytime productivity, creative sessions, or fighting fatigue.',
     variants: [
       { weight: '3.5g', price: 25 },
       { weight: '1/2 oz', price: 60 },
       { weight: '1 oz', price: 125 },
     ],
     isSpecial: false,
-    benefits: ['Deep Relaxation', 'Earthy & Kushy', 'Sedating'],
+    benefits: ['Electric Citrus', 'Euphoric Energy', 'High Potency'],
     images: ['/uploads/titan-express.webp'],
     active: true,
     sortOrder: 3,
