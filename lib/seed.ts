@@ -115,7 +115,7 @@ const SEED_PRODUCTS = [
     ],
     isSpecial: false,
     benefits: ['High Potency', 'Fast-Acting', 'Pure Extract'],
-    images: [],
+    images: ['/uploads/wax.jpg'],
     active: true,
     sortOrder: 7,
   },
