@@ -107,20 +107,45 @@ const SEED_PRODUCTS = [
     sortOrder: 6,
   },
   {
-    name: 'Apple Berry',
-    tagline: 'Hybrid · Apple & berry aroma',
-    description: 'Cross of (Dynamite x Bubblicious) x White Widow. Named for its distinct apple-and-berry aroma, it delivers deeply relaxing, full-body effects with a warm, calming character. Won 1st place Bio category at the 2016 Highlife Cup in Amsterdam.',
+    name: 'Wax',
+    tagline: 'Concentrate · Pure potency, fast-acting',
+    description: 'Premium cannabis wax concentrate. Extracted for maximum purity and potency — a small amount goes a long way. Fast-acting with intense, clean effects. Ideal for experienced consumers looking for a stronger experience.',
     variants: [
-      { weight: '3.5g', price: 25 },
-      { weight: '1/2 oz', price: 65 },
-      { weight: '1 oz', price: 125 },
+      { weight: '2g', price: 10 },
     ],
     isSpecial: false,
-    benefits: ['Apple & Berry Aroma', 'Body Relaxation', 'Stress Relief'],
-    images: ['/uploads/apple-berry.webp'],
+    benefits: ['High Potency', 'Fast-Acting', 'Pure Extract'],
+    images: [],
     active: true,
     sortOrder: 7,
   },
+  {
+    name: 'Mushroom Gummies',
+    tagline: 'Psilocybin · Easy dosing, great taste',
+    description: 'Psilocybin-infused gummies for a consistent, easy-to-dose experience. A tastier and more approachable alternative to dried mushrooms, with the same introspective and mind-expanding effects. Great for beginners and experienced users alike.',
+    variants: [
+      { weight: 'Pack', price: 30 },
+    ],
+    isSpecial: false,
+    benefits: ['Easy Dosing', 'Introspective', 'Mind Expanding'],
+    images: [],
+    active: true,
+    sortOrder: 8,
+  },
+  {
+    name: 'Haute Bites Gummies',
+    tagline: 'Edible · Premium infused gummies',
+    description: 'Haute Bites premium infused gummies — crafted for consistent dosing and great flavor. A clean, controlled way to enjoy your experience without any smoke. Perfect for on-the-go or a chill night in.',
+    variants: [
+      { weight: 'Pack', price: 20 },
+    ],
+    isSpecial: false,
+    benefits: ['Consistent Dose', 'Great Flavor', 'Smoke-Free'],
+    images: [],
+    active: true,
+    sortOrder: 9,
+  },
+  {
   {
     name: 'Black Ice',
     tagline: 'Indica-dominant · Deep calm, high potency',
@@ -134,7 +159,7 @@ const SEED_PRODUCTS = [
     benefits: ['Earthy Pine', 'Deep Calm', 'Euphoric'],
     images: ['/uploads/black-ice.webp'],
     active: true,
-    sortOrder: 8,
+    sortOrder: 10,
   },
   {
     name: 'Zkittlez',
@@ -149,7 +174,7 @@ const SEED_PRODUCTS = [
     benefits: ['Candy Sweet', 'Focused & Happy', 'Body Buzz'],
     images: ['/uploads/zkittlez.webp'],
     active: true,
-    sortOrder: 9,
+    sortOrder: 11,
   },
   {
     name: 'Blue Widow',
@@ -164,7 +189,7 @@ const SEED_PRODUCTS = [
     benefits: ['Sweet Berry', 'Uplifting', 'Muscle Relaxation'],
     images: ['/uploads/blue-widow.webp'],
     active: true,
-    sortOrder: 10,
+    sortOrder: 12,
   },
   {
     name: 'Shrooms',
@@ -179,7 +204,7 @@ const SEED_PRODUCTS = [
     benefits: ['Introspective', 'Earthy', 'Mind Expanding'],
     images: ['/uploads/shrooms.webp'],
     active: true,
-    sortOrder: 11,
+    sortOrder: 13,
   },
 ];
 
