@@ -146,7 +146,6 @@ const SEED_PRODUCTS = [
     sortOrder: 9,
   },
   {
-  {
     name: 'Black Ice',
     tagline: 'Indica-dominant · Deep calm, high potency',
     description: 'Cross of Black Domina x White Widow. Dense, frosty buds with an earthy pine-and-resin aroma finishing with dark berry and pepper. Known for a euphoric yet deeply calming effect with high potency (~24% THC).',
