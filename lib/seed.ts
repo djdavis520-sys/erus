@@ -112,6 +112,7 @@ const SEED_PRODUCTS = [
     description: 'Premium cannabis wax concentrate. Extracted for maximum purity and potency — a small amount goes a long way. Fast-acting with intense, clean effects. Ideal for experienced consumers looking for a stronger experience.',
     variants: [
       { weight: '2g', price: 10 },
+      { weight: '1/2 oz', price: 50 },
     ],
     isSpecial: false,
     benefits: ['High Potency', 'Fast-Acting', 'Pure Extract'],
